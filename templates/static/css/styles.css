@@ -1,0 +1,240 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+    }
+
+    body {
+      position: relative;
+      background-color: black;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../img/fundo2.png);
+        opacity: 0.08;
+        z-index: -1;
+      }
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .content-links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 36px 10px 36px;
+      background-color: #151963;
+      color: #fff;
+      border-radius: 10px;
+    }
+
+    .content-subtitle {
+      font-size: 36px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .content-item {
+      display: flex;
+      font-size: 18px;
+      font-weight: bold;
+      gap: 18px;
+    }
+
+    .content-item li a {
+      color: #fff;
+    }
+
+    .content-title-hero h2 {
+      font-size: 66px;
+      color: #323bf1;
+      margin-top: 160px;
+    }
+
+    .content-title-hero h3 {
+      font-size: 40px;
+      color: #fff;
+    }
+
+    .content-hero {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      max-width: 850px;
+      margin: 0 auto;
+      padding-top: 160px;
+    }
+
+    .content-avatar {
+      width: 200px;
+      border-radius: 100px;
+      object-fit: fill;
+      border: 3px solid #323bf1;
+    }
+
+
+    .content-about {
+      text-align: center;
+      font-size: 36px;
+      color: #fff;
+    }
+
+    .content-span {
+      color: #323bf1;
+    }
+
+    .content-about p {
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .content-social {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+    }
+
+    .social-icon-link {
+      font-size: 36px;
+      font-weight: bold;
+      color: #323bf1;
+      margin-top: 24px;
+      cursor: pointer;
+      position: relative;
+      z-index: -1;
+    }
+
+    .social-icon-link:hover {
+      scale: calc(1.2);
+    }
+
+    .title-skills {
+      font-size: 44px;
+      text-align: center;
+      color: #323bf1;
+      margin-top: 160px;
+      margin-bottom: 40px;
+      text-decoration: underline;
+      text-decoration-color: #fff;
+    }
+
+    .content-skill {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-top: 80px;
+    }
+
+    .content-skill p {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 8px 16px 8px 16px;
+      background-color: #151963;
+      border-bottom: 2px solid #151963;
+      color: #fff;
+      width: 186px;
+      margin: 0 auto;
+      text-align: center;
+      white-space: nowrap;
+      border-radius: 4px;
+    }
+
+    .content-skill p:hover {
+      background-color: #323bf1;
+      border-bottom: 2px solid #fff;
+    }
+
+    .title-project {
+      font-size: 44px;
+      text-align: center;
+      color: #323bf1;
+      margin-top: 160px;
+      margin-bottom: 44px;
+      text-decoration: underline;
+      text-decoration-color: #fff;
+    }
+
+    .container-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    .container-project {
+      background-color: black;
+    }
+
+    .container-content {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      max-width: 600px;
+      color: #fff;
+    }
+
+    .content-box {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .content-paragraph {
+      font-weight: bold;
+      color: #323bf1;
+    }
+
+    .content-title {
+      font-weight: bold;
+      color: #323bf1;
+    }
+
+    .container-content {
+      display: flex;
+    }
+
+    .container-button {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .container-button button {
+      font-size: 24px;
+      padding: 4px 8px 4px 8px;
+      border: none;
+      background-color: #151963;
+      color: #fff;
+      border-radius: 4px;
+      margin-top: 16px;
+      cursor: pointer;
+    }
+
+    .container-button button:hover {
+      background-color: #323bf1;
+    }
+
+    .content-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #151963;
+      color: #fff;
+      padding: 20px 36px 20px 36px;
+      margin-top: 160px;
+      border-radius: 10px;
+    }
