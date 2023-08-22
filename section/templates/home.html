@@ -85,90 +85,31 @@
 
     <section id="project" class="container">
       <h2 class="title-project">Projetos</h2>
-      <div class="container-grid">
-        <div class="container-project">
-          <div class="container-content">
-            <div class="content-box">
-              <h2 class="content-title">Projeto Exemplo</h2>
-              <p>Descrição do projeto, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fugit id, placeat
-                ea unde rem corrupti. Eius perspiciatis, aperiam ea facilis quos ullam est, veniam error accusamus
-                debitis distinctio? Unde, quisquam praesentium quia repellat dolorum animi facere labore suscipit optio
-                ut! Explicabo cum laboriosam</p>
-              <p><span class="content-paragraph">Projeto</span>: Pessoal</p>
-              <p><span class="content-paragraph">Skills</span>: HTML, CSS, Javacript</p>
+      <div>
+        <ul class="container-grid">
+          {% for project in project %}
+          <li>
+            <div class="container-project">
+              <div class="container-content">
+                <div class="content-box">
+                  <h2 class="content-title">{{ project.title }}</h2>
+                  <p>{{ project.description }}</p>
+                  <p><span class="content-paragraph">Projeto</span>: {{ project.project }}</p>
+                  <p><span class="content-paragraph">Skills</span>: {{ project.language }}</p>
+                </div>
+                <img class="content-image-link" src="{{ project.upload }}" alt="{{ project.title }} Image">
+              </div>
+              <div class="container-button">
+                <a href="{{ project.deploy }}" target="_blank"><button>Deploy</button></a>
+                <a href="{{ project.link }}" target="_blank"><button>Github</button></a>
+              </div>
             </div>
-            <img src="https://via.placeholder.com/300" alt="Image Placeholder" width="300" height="250">
-          </div>
-          <div class="container-button">
-            <button>Deploy</button>
-            <button>Github</button>
-          </div>
-        </div>
-        <div class="container-project">
-          <div class="container-content">
-            <div class="content-box">
-              <h2 class="content-title">Projeto Exemplo</h2>
-              <p>Descrição do projeto, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fugit id, placeat
-                ea unde
-                rem corrupti. Eius perspiciatis, aperiam ea facilis quos ullam est, veniam error accusamus debitis
-                distinctio?
-                Unde, quisquam praesentium quia repellat dolorum animi facere labore suscipit optio ut! Explicabo cum
-                laboriosam
-              </p>
-              <p><span class="content-paragraph">Projeto</span>: Pessoal</p>
-              <p><span class="content-paragraph">Skills</span>: HTML, CSS, Javacript</p>
-            </div>
-            <img src="https://via.placeholder.com/300" alt="Image Placeholder" width="300" height="250">
-          </div>
-          <div class="container-button">
-            <button>Deploy</button>
-            <button>Github</button>
-          </div>
-        </div>
-        <div class="container-project">
-          <div class="container-content">
-            <div class="content-box">
-              <h2 class="content-title">Projeto Exemplo</h2>
-              <p>Descrição do projeto, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fugit id, placeat
-                ea unde
-                rem corrupti. Eius perspiciatis, aperiam ea facilis quos ullam est, veniam error accusamus debitis
-                distinctio?
-                Unde, quisquam praesentium quia repellat dolorum animi facere labore suscipit optio ut! Explicabo cum
-                laboriosam
-              </p>
-              <p><span class="content-paragraph">Projeto</span>: Pessoal</p>
-              <p><span class="content-paragraph">Skills</span>: HTML, CSS, Javacript</p>
-            </div>
-            <img src="https://via.placeholder.com/300" alt="Image Placeholder" width="300" height="250">
-          </div>
-          <div class="container-button">
-            <button>Deploy</button>
-            <button>Github</button>
-          </div>
-        </div>
-        <div class="container-project">
-          <div class="container-content">
-            <div class="content-box">
-              <h2 class="content-title">Projeto Exemplo</h2>
-              <p>Descrição do projeto, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fugit id, placeat
-                ea unde
-                rem corrupti. Eius perspiciatis, aperiam ea facilis quos ullam est, veniam error accusamus debitis
-                distinctio?
-                Unde, quisquam praesentium quia repellat dolorum animi facere labore suscipit optio ut! Explicabo cum
-                laboriosam
-              </p>
-              <p><span class="content-paragraph">Projeto</span>: Pessoal</p>
-              <p><span class="content-paragraph">Skills</span>: HTML, CSS, Javacript</p>
-            </div>
-            <img src="https://via.placeholder.com/300" alt="Image Placeholder" width="300" height="250">
-          </div>
-          <div class="container-button">
-            <button>Deploy</button>
-            <button>Github</button>
-          </div>
-        </div>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
     </section>
+
   </main>
   <footer class="container">
     <div class="content-footer">
